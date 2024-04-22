@@ -1,4 +1,4 @@
-import makeSections, { happen } from "./scr.js";
+import makeSections, { createImage, happen, profileCards } from "./scr.js";
 var arr = [
   {
     heading: "About <span style='color:blue;'>Us</span>",
@@ -28,6 +28,24 @@ var arr = [
     shadowColor: "yellow",
   },
 ];
+
+const faculty = [
+  {
+    name: "Deo Kumar Das   ",
+    position: "Assistant Professor, B. Sc. (Silk Technology)",
+  },
+  {
+    name: "Shyam Sunder ",
+    position: "Assistant Professor, M. Tech., PhD (Pursuing)",
+  },
+  {
+    name: "Jitender Meena ",
+    position: "Assistant Professor, M. Tech., PhD (Pursuing)",
+  },
+];
+
 console.log("hello content");
 happen(5000);
 makeSections(arr);
+createImage("./tc.png", 2, 0, 0, 0, 0);
+profileCards("tec", faculty);

@@ -97,7 +97,7 @@ function makeSections(arr) {
 
 //function to create a image in background
 
-function createImage(src, top, right, bottom, left) {
+function createImage(src, scale, top, right, bottom, left) {
   const img = document.createElement("img");
 
   img.classList.add("bg");
@@ -107,6 +107,7 @@ function createImage(src, top, right, bottom, left) {
   img.style.right = right;
   img.style.bottom = bottom;
   img.style.left = left;
+  img.style.transform = `scale(${scale})`;
   document.querySelector("body").appendChild(img);
 }
 
@@ -120,6 +121,21 @@ function jou() {
 function happen(time) {
   setTimeout(jou, time);
 }
+function profileCards(profileId, faculty) {
+  const node = document.getElementById(profileId);
+  for (let i = 0; i < node.childElementCount; i++) {
+    var key = faculty[i];
+
+    if (key.src) {
+      node.children[i].children[0].src = key.src;
+    }
+
+    node.children[i].children[1].innerHTML =
+      key.name +
+      "<br>" +
+      `<span style = 'font-size:0.95rem; opacity:0.6;'>${key.position}</span>`;
+  }
+}
 
 export default makeSections;
-export { happen, createImage };
+export { happen, createImage, profileCards };

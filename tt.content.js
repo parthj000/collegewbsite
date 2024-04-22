@@ -1,4 +1,4 @@
-import makeSections, { happen } from "./scr.js";
+import makeSections, { createImage, happen, profileCards } from "./scr.js";
 var arr = [
   {
     heading: "About <span style='color:blue;'>Us</span>",
@@ -82,19 +82,8 @@ const faculty2 = [
   },
 ];
 
-function profileCards(profileId, faculty) {
-  const node = document.getElementById(profileId);
-  for (let i = 0; i < node.childElementCount; i++) {
-    var key = faculty[i];
-    node.children[i].children[0].src = key.src;
-    node.children[i].children[1].innerHTML =
-      key.name +
-      "<br>" +
-      `<span style = 'font-size:0.95rem; opacity:0.6;'>${key.position}</span>`;
-  }
-}
-
 profileCards("tec", faculty);
 profileCards("pic-card-2", faculty2);
+createImage("./tt.png");
 
 // Access all children of the node

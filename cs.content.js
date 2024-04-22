@@ -1,4 +1,4 @@
-import makeSections, { happen } from "./scr.js";
+import makeSections, { createImage, happen } from "./scr.js";
 var arr = [
   {
     heading: "About <span style='color:blue;'>Us</span>",
@@ -31,3 +31,5 @@ var arr = [
 console.log("hello content");
 happen(5000);
 makeSections(arr);
+
+createImage("./cs.png", 2);

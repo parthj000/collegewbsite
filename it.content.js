@@ -1,4 +1,4 @@
-import makeSections, { happen } from "./scr.js";
+import makeSections, { createImage, happen, profileCards } from "./scr.js";
 var arr = [
   {
     heading: "About <span style='color:blue;'>Us</span>",
@@ -28,6 +28,30 @@ var arr = [
     shadowColor: "yellow",
   },
 ];
+
+const faculty = [
+  {
+    name: "Anurag Jagetiya",
+    src: "https://mlvti.ac.in/admin/uploads/353f5769.jpg",
+
+    position: "Assistant Professor, B.E., M.E. PhD(Pursuing)",
+  },
+  {
+    name: "Nidhi Surana",
+    src: "https://mlvti.ac.in/admin/uploads/nidhi.jpg",
+
+    position: "Assistant Teaching Associates, B.E., M. Tech.",
+  },
+  {
+    name: "Amisha Sharma",
+    src: "https://mlvti.ac.in/admin/uploads/amisha.jpg",
+
+    position: "Guest Faculty, B.E., M. Tech.",
+  },
+];
+
 console.log("hello content");
 happen(5000);
 makeSections(arr);
+createImage("./cs.png", 2);
+profileCards("tec", faculty);
