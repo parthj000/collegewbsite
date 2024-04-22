@@ -1,0 +1,20 @@
+/**
+responsive
+**/
+
+
+@media (max-width:800px) {
+    #branchname{
+        font-size: 7vw;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        
+    }
+    
+    
+    
+   
+    
+    
+    
+}
