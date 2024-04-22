@@ -83,7 +83,7 @@ const faculty2 = [
 ];
 
 profileCards("tec", faculty);
-profileCards("pic-card-2", faculty2);
+// profileCards("pic-card-2", faculty2);
 createImage("./tt.png");
 
 // Access all children of the node
