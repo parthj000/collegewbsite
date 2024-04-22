@@ -1,0 +1,417 @@
+*{
+    padding:0;
+    margin:0;
+    font-size:100%;
+    
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#branchname span{
+    color:red;
+}
+
+#branchname{
+    font-size:5vw;
+    padding:2rem;
+    
+    animation:zero-ani calc(var(--i) + 2.5s) ,show-text 1s calc(var(--i) + 2.5s)  linear;
+
+    
+    
+    font-weight: lighter;
+        letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations */
+
+.wrapper {
+    display:flex;
+    align-items: center;
+    
+    
+   
+    height:100vh;
+    animation:wrapper 3s linear var(--i) forwards;
+    background-color:#f6f6f6;
+    
+ 
+    
+    
+    
+}
+:root{
+    --i:8s;
+    
+}
+
+
+
+svg{
+    
+    animation:svg-translate  3s backwards linear var(--i);
+}
+
+
+
+
+
+
+/* lets start the animation  */
+@keyframes show-text {
+    from{
+        filter:blur(5px);
+        transform:translateX(-50px);
+        opacity:0;
+        
+    }
+    to{
+        filter:blur(0);
+        transform:translateX(0);
+        opacity:1;
+        
+    }
+    
+}
+
+@keyframes svg-translate{
+from{
+    transform:translate(calc(50vw - 200px),0%);
+}
+to{
+    transform:translate(0%,0%);
+}
+
+}
+@keyframes wrapper {
+    from{
+        height:100vh;
+    }
+    to{
+        height:300px;
+    }
+    
+}
+
+/* chalo animation start Karte hain */
+#the-box-ani {
+    
+    animation: box calc( var(--i)) infinite;
+    animation-delay: var(--j);
+    opacity:0;
+    
+   
+
+}
+#the-box-ani #thebox-ani-2{
+    animation: thebox-ani-2  var(--i) infinite;
+    animation-delay: var(--j);
+    
+
+}
+
+
+#hacker-ani {
+    animation: hacker-ani var(--i) infinite;
+    animation-delay: var(--j);
+    opacity:0;
+    transform-origin: center;
+
+}
+
+#code-ani {
+    animation: code-ani var(--i) infinite;
+    transform-origin:top;
+    transform-box:border-box;
+    animation-delay: var(--j);
+    opacity:0;
+    
+
+}
+
+#element-1
+{
+    animation :ela1 var(--i) infinite;
+    animation-delay:var(--j);
+    opacity:0;
+    
+    
+
+}
+#element-2{
+    animation: ela2 var(--i) infinite;
+    animation-delay: var(--j);
+    opacity:0;
+    
+    
+}
+#element-3{
+    animation: ela3 var(--i) infinite;
+    animation-delay: var(--j);
+    opacity:0;
+
+    
+}
+
+
+
+
+@keyframes box {
+
+    0% {
+        opacity:0;
+        transform:scale(2);
+        filter:blur(10px);
+    }
+
+    17% {
+        opacity:1;
+        transform:scale(1);
+        filter:blur(0px);
+    }
+    30%{
+        opacity:1;
+    }
+    40%,100%{
+        opacity:0;
+        
+    }
+
+    
+
+   
+
+
+
+
+
+
+}
+@keyframes thebox-ani-2 {
+
+    0%,17%{
+        transform: translate(0%);
+
+    }
+    30%{
+        transform: translate(-16%);
+    }
+    40%,100%{
+        transform: translate(-16%) ;
+
+    }
+    
+}
+
+ @keyframes hacker-ani {
+
+    0%{
+        opacity:0;
+        
+
+    }
+
+    30% {
+        opacity:0;
+        /* transform:scale(0.5); */
+        filter:blur(5px);
+        
+    }
+
+    40% {
+        opacity:1;
+        /* transform:scale(1); */
+        filter:blur(0px);
+
+    }
+
+    60%,100% {
+        opacity:0;
+        filter:blur(15px);
+    }
+
+
+
+
+
+
+}
+
+
+
+@keyframes code-ani {
+
+    0% {
+        opacity:0;
+    }
+
+    20% {
+        opacity:0;
+    }
+
+    40% {
+        opacity:0;
+        transform: rotateZ(15deg);
+        
+        filter:blur(5px);
+    }
+
+    60% {
+        opacity:1;
+        transform: rotateZ(0deg);
+        filter:blur(0);
+        
+        
+    }
+
+    80%,100% {
+        opacity:0;
+        
+    }
+
+
+
+
+
+
+}
+
+
+
+@keyframes ela1 {
+
+    0%{
+        opacity:0;
+        filter:blur(10px);
+        transform:translate(6%);
+    }
+    60%{
+        opacity:0;
+    filter:blur(10px);
+    }
+
+   
+
+    80% {
+        opacity:1;
+
+        filter:blur(0px);
+    }
+    100%{
+        opacity:0;
+    }
+
+
+
+
+
+
+} 
+@keyframes ela2 {
+
+    0%{
+        opacity:0;
+        filter:blur(10px);
+        transform:translate(12%);
+    }
+    60%{
+        opacity:0;
+    filter:blur(10px);
+    }
+
+   
+
+    85% {
+        opacity:1;
+
+        filter:blur(0px);
+    }
+    100%{
+        opacity:0;
+    }
+
+
+
+
+
+
+} 
+@keyframes ela3 {
+
+    0%{
+        opacity:0;
+        filter:blur(10px);
+        transform:translate(24%);
+    }
+    60%{
+        opacity:0;
+    filter:blur(10px);
+    }
+
+   
+
+    90% {
+        opacity:1;
+
+        filter:blur(0px);
+    }
+    100%{
+        opacity:0;
+    }
+
+
+
+
+
+
+} 
+@keyframes svg {
+    from{
+        transform:scale(0) ;
+        filter:blur(15px);
+        opacity: 0.3;
+        
+        
+
+    }
+    to{
+        transform:scale(1);
+        filter:blur(0px);
+        opacity: 1;
+        
+        
+       
+
+
+    }
+}
+
+@keyframes zero-ani {
+    0%,100%{
+        opacity:0;
+    }
+}
+
+
+
+
+
+
+
+

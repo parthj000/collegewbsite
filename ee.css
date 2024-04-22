@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.wrapper {
+     display:flex;
+    align-items: center;
+   
+    
+    
+    
+   
+    height:100vh;
+    animation:wrapper 3s linear var(--i) forwards;
+    background-color:rgb(245, 234, 151);
+}
+
+#branchname span{
+    color:red;
+}
+
+#branchname{
+    font-size:4vw;
+    padding:2rem;
+    
+    animation:zero calc(var(--i) + 2.5s) ,show-text 1s calc(var(--i) + 2.5s)  linear;
+    text-transform: uppercase;
+    
+    
+    font-weight: lighter;
+        letter-spacing: 1.5px;
+        color:rgb(0, 0, 0);
+}
+
+
+svg{
+    
+    animation:svg-translate  3s backwards linear var(--i);
+}
+
+:root {
+    --i: 6s;
+
+}
+
+#center {
+    animation: center var(--i) infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+@keyframes wrapper {
+    from{
+        height:100vh;
+    }
+    to{
+        height:300px;
+    }
+    
+}
+
+#signal-tower {
+    animation: signal-tower var(--i) infinite;
+}
+
+#signal-1 {
+    animation: signal-1 var(--i) infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+
+}
+
+#signal-2 {
+    animation: signal-2 var(--i) infinite;
+
+    transform-origin: center;
+    transform-box: fill-box;
+
+
+}
+
+
+#infinity {
+    opacity: 0;
+}
+
+#cd {
+    animation:cd var(--i) infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+
+#rduino {
+    animation: rduino var(--i) infinite, zero var(--i) 6s infinite;
+
+}
+
+@keyframes show-text {
+    from{
+        filter:blur(5px);
+        transform:translateX(-50px);
+        opacity:0;
+    }
+    to{
+        filter:blur(0);
+        transform:translateX(0);
+        opacity:1;
+    }
+    
+}
+
+
+@keyframes svg-translate{
+from{
+    transform:translate(calc(50vw - 200px),0%);
+}
+to{
+    transform:translate(0%,0%);
+}
+
+}
+@keyframes zero {
+    0%,100%{
+        opacity:0 ;
+    }
+    
+}
+
+
+
+
+@keyframes signal-2 {
+   
+    0%,
+    27%{
+       transform: scale(0.7);
+       filter: blur(2px);
+
+       opacity: 0;
+
+   }
+
+  
+   36% {
+       transform: scale(1);
+
+       opacity: 1;
+   }
+   54%,100%{
+       opacity:0;
+
+   }
+
+}
+
+@keyframes signal-1 {
+
+    0%,
+     18%{
+        transform: scale(0.7);
+        filter: blur(2px);
+
+        opacity: 0;
+
+    }
+
+   
+    27% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    36%,100%{
+        opacity:0;
+
+    }
+
+
+   
+
+}
+
+@keyframes signal-tower {
+    0% {
+     
+       transform: translate(25%, 25%);
+    }
+
+    18%,36% {
+        transform: translate(25%, 0%);
+
+    }
+
+    54% {
+        transform: translate(0%, 0%);
+        opacity:1;
+
+    }
+    72%,100%{
+        opacity:0;
+
+    }
+
+
+}
+
+@keyframes center {
+    0% {
+        transform: scale(5);
+        opacity: 0;
+    }
+
+    18%,54%{
+        transform:scale(1);
+        opacity: 1;
+        filter:blur(0px);
+
+    }
+    72%{
+        opacity:0;
+        filter:blur(10px);
+        transform: scale(3);
+
+    }
+
+    
+    
+
+}
+
+@keyframes rduino {
+
+    0%,36%
+     {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-10%);
+
+    }
+
+    54% {
+        opacity: 1;
+        filter: blur(0px);
+        ransform: translateX(0%);
+
+
+    }
+    72%,100%{
+        opacity:0;
+    }
+
+}
+
+@keyframes cd {
+
+    0%,
+    54% {
+        opacity: 0;
+        transform:rotateZ('0deg');
+        filter:blur(10px);
+
+    }
+
+    69%,75%{
+        opacity: 1;
+        transform:scale(1) ;
+        filter:blur(0px);
+
+
+    }
+    90%{
+        opacity: 1;
+        transform:scale(1) rotateZ(270deg);
+        filter:blur(0px);
+
+
+    }
+    100%{
+        opacity:0;
+        transform:scale(1) rotateZ(270deg);
+        filter:blur(50px);
+    }
+
+}

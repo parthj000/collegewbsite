@@ -1,0 +1,219 @@
+
+*{
+    padding:0;
+    margin:0;
+    
+    
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --i:4s;
+}
+#branchname span{
+    color:red;
+}
+
+#branchname{
+    font-size:5vw;
+    padding:2rem;
+    
+    animation:zero calc(var(--i) + 2.5s) ,show-text 1s calc(var(--i) + 2.5s)  linear;
+    text-transform: uppercase;
+    
+    
+    font-weight: lighter;
+        letter-spacing: 1.5px;
+        color:white;
+}
+
+
+
+.wrapper {
+   display:flex;
+    align-items: center;
+    
+    
+   
+    height:100vh;
+    animation:wrapper 3s linear var(--i) forwards;
+    background-color:#101010;
+    padding: 2.5rem;
+
+
+}
+:root{
+    --j:0.2s;
+    --k:0.5s;
+}
+/* lets start the animatio  */
+
+#process-2{
+    animation:process-2 2s ease-out 0s,zero 2s 2s infinite;
+    transform-origin:center;
+    transform-box:border-box;
+}
+#sweater{
+    animation:zero 2s , pop-up 0.25s ease-out 2s, sweater 2s linear alternate 3s infinite;
+    transform-origin: center;
+    transform-box:border-box;
+}
+
+#gear{
+    animation:zero 2.5s, pop-up 0.25s ease-out 2.5s,gear 2s linear 3.5s infinite;
+    transform-origin: center;
+    transform-box:border-box;
+   
+}
+svg{
+    animation:svg-translate 3s ease-out 4s backwards;
+    height:15rem;
+    
+   
+}
+
+@keyframes show-text {
+    from{
+        filter:blur(5px);
+        transform:translateX(-50px);
+        opacity:0;
+    }
+    to{
+        filter:blur(0);
+        transform:translateX(0);
+        opacity:1;
+    }
+    
+}
+
+
+@keyframes ver-line{
+    0%{
+        transform:translateY(100%);
+        
+        
+       
+
+    }
+    100%{
+        transform:translateY(0%);
+        
+
+    }
+}
+@keyframes hor-line{
+    0%{
+        transform:translateX(50%);
+       
+
+    }
+    100%{
+        transform:translateX(0%);
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes zero{
+    0%,100%{
+        opacity:0;
+    }
+}
+@keyframes cloth {
+    from{
+        transform:rotateZ(0deg);
+        opacity:1;
+
+
+    }
+    to{
+        transform:rotateZ(720deg);
+        opacity:0;
+        filter:blur(10px);
+
+    }
+}
+@keyframes process-2{
+    0%{
+        transform:rotateZ(0deg);
+        opacity:0;
+        filter:blur(10px);
+
+    }
+    90%{
+        transform:rotateZ(720deg);
+        opacity:1;
+        filter:blur(0px);
+        
+
+    }
+    100%{
+        transform:rotateZ(720deg) scale(0);
+        opacity:1;
+        filter:blur(0px);
+
+    }
+}
+@keyframes pop-up{
+    0%{
+        transform:scale(0) rotate(-1deg);
+        opacity:0;
+        filter:blur(5px);
+        
+
+    }
+    100%{
+        transform:scale(1) rotate(0deg);
+        opacity:1;
+        
+
+    }
+    
+}
+@keyframes sweater {
+    0%{
+        transform:translateY(0px);
+    }
+    
+    100%{
+        transform:translateY(10px);
+    }
+    
+}
+@keyframes gear {
+    0%{
+        transform:rotateZ(0deg);
+    }
+    0%{
+        transform:rotateZ(360deg);
+    }
+}
+@keyframes svg-translate{
+    from{
+        transform:translateX(35vw);
+    }
+    to{
+        transform:translateX(0%);
+    }
+    
+    }
+
+@keyframes wrapper {
+    from{
+        height:100vh;
+    }
+    to{
+        height:300px;
+    }
+    
+}
