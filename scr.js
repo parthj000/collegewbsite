@@ -8,6 +8,11 @@ function make(
   borderColor,
   shadowColor
 ) {
+  // document
+  //   .getElementById("branchname")
+  //   .style.setProperty("--i", "1s")
+  //   .console.log("i");
+
   const elem = document.createElement("section");
   elem.id = paramId;
   elem.classList.add("bx");
@@ -66,8 +71,10 @@ function make(
   }
   if (shadowColor) {
     elem.addEventListener("mouseover", function () {
-      elem.style.boxShadow = "0.7rem 0.7rem 0 " + shadowColor;
+      elem.style.boxShadow =
+        "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
     });
+
     elem.addEventListener("mouseout", function () {
       elem.style.boxShadow = "none";
     });
@@ -131,9 +138,9 @@ function profileCards(profileId, faculty) {
     }
 
     node.children[i].children[1].innerHTML =
-      key.name +
+      `<span class="b">${key.name}</span>` +
       "<br>" +
-      `<span style = 'font-size:0.95rem; opacity:0.6;'>${key.position}</span>`;
+      `<span style = 'font-size:0.8rem; opacity:0.6;'>${key.position}</span>`;
   }
 }
 

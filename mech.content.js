@@ -7,7 +7,6 @@ var arr = [
       "<p>The mechanical engineering has a major role in automobile, aviation, production, power generation, mining and refineries. The department of Mechanical Engineering was established in the year 2007. Department offers four year degree course in B. Tech (Mechanical Engineering). The department is also engaged in providing in-house training to students. Department has qualified faculty and skilled supporting technical staff.</p>",
     id: "About-us",
     before: "one",
-    shadowColor: "blue",
 
     brdrRd: "1rem",
   },

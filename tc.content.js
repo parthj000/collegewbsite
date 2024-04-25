@@ -1,7 +1,7 @@
 import makeSections, { createImage, happen, profileCards } from "./scr.js";
 var arr = [
   {
-    heading: "About <span style='color:blue;'>Us</span>",
+    heading: "About <span style='color:red;'>Us</span>",
     headingText: "About Us",
     content:
       "<p>The department of Textile Chemistry was established in the year 1993. Department offers four year degree course in B. Tech. (Textile Chemistry). It is engaged in Post graduate education and research activities in the college. Department has qualified faculty and other highly skilled technical staff. It has arranged various extramural and extension lectures of experts from institutions of national repute like NIT and IIT in preceding academic sessions.<br>Being the part of an exclusive college offering degree courses the department has university toppers every year. The products of this department are excelling in their world of work across the globe occupying respectable positions in organizations of national and international repute. Department provide the testing facility and consultancy for the industry.</p>",
@@ -47,5 +47,5 @@ const faculty = [
 console.log("hello content");
 happen(5000);
 makeSections(arr);
-createImage("./tc.png", 2, 0, 0, 0, 0);
+// createImage("./tc.png", 2, 0, 0, 0, 0);
 profileCards("tec", faculty);

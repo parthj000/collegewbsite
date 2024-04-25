@@ -52,6 +52,6 @@ const faculty = [
 console.log("hello content");
 profileCards("tec", faculty);
 
-createImage("./ee.png");
+// createImage("./ee.png");
 happen(5000);
 makeSections(arr);

@@ -9,7 +9,7 @@
 }
 
 :root{
-    --i:4s;
+    --i :8s;
 }
 #branchname span{
     color:red;

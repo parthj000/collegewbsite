@@ -3,13 +3,14 @@
 :root{
     --p-font-color:rgb(101, 101, 101);
     --heading-color:black;
-    --brdr-color:rgb(0, 0, 0);
+--box-shadow:0 0.1em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.3em 0.5em 0 rgba(0, 0, 0, 0.19);
     --p-font-size:1.15rem;
     --h-font-size:2.5rem;
     --brdr-rd:1rem;
 }
 body{
     overflow-y: hidden;
+    background:#F3F3F3;
 }
 
 .bg{
@@ -145,18 +146,19 @@ main container to hold the content
     margin-bottom:5rem;
     transition:all 0.15s ease-in-out;
     cursor: pointer;
-    border-style: dashed;
+    /* border-style: dashed; */
     border-width: 1px;
     border-radius:var(--brdr-rd);
     position: relative;
     padding:1rem;
     background-color: #ffffff;
-    box-shadow: 0rem 0rem 0 var(--brdr-color);
+    transition:all 0.3s ;
+    
     
     
 }
 .bx:hover,.bx:focus{
-    box-shadow: 0.7rem 0.7rem 0 var(--brdr-color);
+     box-shadow: var(--box-shadow);
     
     
     transform: translateY(-4px);
@@ -397,7 +399,7 @@ Responsiveness
     
    aspect-ratio: 16/16;
    border-radius: 50%;
-   border:1px dashed;
+   /* border:1px dashed; */
    padding:0.15rem;
    
    
