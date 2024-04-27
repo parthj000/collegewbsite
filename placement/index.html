@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+    <style>
+      .floating-container {
+        position: relative;
+        font-size: 0.8em;
+        text-align: center;
+        padding: 0.3em 0.5em;
+
+        overflow: hidden;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Placement 2022-23
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="container-fluid px-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                  <div class="floating-container">
+                    <div class="card"></div>
+
+                    <div id="table-container"></div>
+                    <div id="table-container2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function createTable(rows, cols, contentArray) {
+        // Create a table element
+        var table = document.createElement("table");
+
+        // Loop through each row
+        for (var i = 0; i < rows; i++) {
+          // Create a table row element
+          var row = document.createElement("tr");
+
+          // Loop through each column
+          for (var j = 0; j < cols; j++) {
+            // Create a table cell element
+            var cell = document.createElement("td");
+
+            // Check if contentArray has content for this cell
+            if (contentArray[i] && contentArray[i][j]) {
+              // Set the content of the cell
+              cell.textContent = contentArray[i][j];
+            }
+
+            // Append the cell to the row
+            row.appendChild(cell);
+          }
+
+          // Append the row to the table
+          table.appendChild(row);
+        }
+
+        // Return the created table
+        return table;
+      }
+
+      // Example usage:
+      var content = [
+        [
+          "Branch",
+          "Total enrolled students",
+          "Eligible students",
+          "Total placed students",
+          "Percentage Placement",
+        ],
+        ["Textile Technology", 113, 61, 61, 100],
+        ["Textile Chemistry", 30, 15, 15, 100],
+        ["Information Technology", 52, 43, 23, 53.48],
+        ["Electronics and Comm.", 11, 7, 1, 14.28],
+        ["Mechanical Engineering", 29, 14, 6, 42.85],
+        ["Total", 235, 140, 106, 75.71],
+      ];
+
+      var content2 = [
+        [
+          "Branch",
+          "Total enrolled students",
+          "Eligible students",
+          "Total placed students",
+          "Percentage Placement",
+        ],
+        ["Textile Technology", 113, 61, 61, 100],
+        ["Textile Chemistry", 30, 15, 15, 100],
+        ["Information Technology", 52, 43, 23, 53.48],
+        ["Electronics and Comm.", 11, 7, 1, 14.28],
+        ["Mechanical Engineering", 29, 14, 6, 42.85],
+        ["Total", 235, 140, 106, 75.71],
+      ];
+
+      // Create the table
+      var table = createTable(7, 5, content);
+
+      // Append the table to the container in the HTML document
+      document.getElementById("table-container").appendChild(table);
+    </script>
+  </body>
+</html>

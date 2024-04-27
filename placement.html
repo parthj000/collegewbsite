@@ -1,0 +1,211 @@
+
+
+
+<!DOCTYPE html>
+<html lang=
+>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>animation_correction</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel='stylesheet' href='ee.css'>
+<link rel='stylesheet' href='layout.css'>
+<link rel='stylesheet' href='responsive.css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./placement.css">
+
+
+
+</head>
+<body>
+        <div class="main-container">
+        <div id="nested">
+        <div class="side-bar">
+            <div class="head-department">
+                Contents
+            </div>
+            <ul>
+                
+                
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="head-department">
+                Department of EE
+            </div>
+
+            <section id="one" class="bx">
+                <div class="heading">
+                    Teaching Methodology
+                </div>
+
+            <div class="content">
+                <p>We follow semester scheme for all the 4 years of UG courses and 2 years of PG courses. Teaching Methodology involves Three Tier learning process. Theoretical knowledge is provided through classroom teaching using chalk-duster to modern teaching aids. Online lectures are also explored through NPTEL, QEEE under Technical Education Quality Improvement Program. Students are facilitated for problem solving and doubt clearing in the subjects specified in the schemes of syllabi. Practical sessions are the part of curriculum prescribed by Rajasthan Technical University (RTU), Kota  exploring the theoretical knowledge over practice. Industrial visits are also arranged for better exposure to latest technological advancements.</p>
+            </div>
+          
+        </section>
+
+           
+
+         <section id="teacher-card" class="bx pr" >
+            <div class="profile-container">
+              <div><img src="https://mlvti.ac.in/admin/uploads/hareeta.jpg" alt=""></img></div>
+                
+                <div class="pr-mega">
+                <h1 class="pr-heading">Hareeta Malani</h1>
+                <div class="pr-about">Head of Department</div>
+                <p class="pr-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima illo molestiae fugiat tenetur incidunt nihil dolorum vitae qui, deleniti eum facilis laudantium ipsum ad nesciunt et. Quidem reiciendis aliquam earum?</p>
+                </div>
+            </div>
+
+            
+
+            
+          
+        </section>
+        
+       <section id="tec" class="bx pic-card" >
+           
+            
+         <div class="">
+          <img src="https://mlvti.ac.in/admin/uploads/sarita.jpg" alt="">
+          <h1 class="text">Mrs. Sarita</h1>
+         
+         </div>
+         <div class="">
+          <img src="https://mlvti.ac.in/admin/uploads/41781bbb.jpg" alt="">
+          <h1 class="text">Dr. Ritesh Saraswat</h1>
+         
+         </div>
+         <div class="">
+          <img src="https://mlvti.ac.in/admin/uploads/nidhisharma.jpg" alt="">
+          <h1 class="text">Mrs. Nidhi Sharma</h1>
+         
+         </div>
+         <div class="">
+          <img src="https://mlvti.ac.in/admin/uploads/akanksha.jpg" alt="">
+          <h1 class="text">Mrs. Akanksha </h1>
+         
+         </div>
+         
+            
+
+            
+          
+        </section>
+
+
+         <section id="table-1" class="bx " >
+           
+            
+        
+          
+        </section>
+
+
+        
+        
+        
+        
+
+
+
+
+
+
+       
+      
+
+
+        
+
+
+        
+
+        
+          
+
+           
+            
+            
+           
+
+        </div>
+
+    </div>
+
+
+    <script src="./scr.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="placement.content.js" type="module"></script>
+    <script  >
+
+      
+    function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+      function createTable(rows, cols, contentArray) {
+        // Create a table element
+        var table = document.createElement("table");
+
+        // Loop through each row
+        for (var i = 0; i < rows; i++) {
+          // Create a table row element
+          var row = document.createElement("tr");
+
+          // Loop through each column
+          for (var j = 0; j < cols; j++) {
+            // Create a table cell element
+            var cell = document.createElement("td");
+
+            // Check if contentArray has content for this cell
+            if (contentArray[i] && contentArray[i][j]) {
+              // Set the content of the cell
+              cell.textContent = contentArray[i][j];
+            }
+
+            // Append the cell to the row
+            row.appendChild(cell);
+          }
+
+          // Append the row to the table
+          table.appendChild(row);
+        }
+
+        // Return the created table
+        return table;
+      }
+
+var content = [
+        [
+          "Branch",
+          "Total enrolled students",
+          "Eligible students",
+          "Total placed students",
+          "Percentage Placement",
+        ],
+        ["Textile Technology", 113, 61, 61, 100],
+        ["Textile Chemistry", 30, 15, 15, 100],
+        ["Information Technology", 52, 43, 23, 53.48],
+        ["Electronics and Comm.", 11, 7, 1, 14.28],
+        ["Mechanical Engineering", 29, 14, 6, 42.85],
+        ["Total", 235, 140, 106, 75.71],
+      ];
+      const table = createTable(7,5,content);
+       document.querySelector("#table-1").append(table);
+
+    </script>
+    <script src="./scr.js" type="module"></script>
+    
+</body>
+</html>
