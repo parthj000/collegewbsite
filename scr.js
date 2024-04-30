@@ -125,7 +125,10 @@ function jou() {
   document.querySelector("body").style.overflowY = "scroll";
 }
 
-function happen(time) {
+function happen(time, param) {
+  if (param) {
+    return;
+  }
   setTimeout(jou, time);
 }
 function profileCards(profileId, faculty) {

@@ -1,9 +1,11 @@
 import makeSections, { createImage, happen, profileCards } from "./scr.js";
+const table = document.getElementById("table-container");
 var arr = [
   {
     heading: "Placement & Training",
     headingText: "Placement & Training",
-    content: "",
+    content:
+      "his kjcbdcjdjhvdchdsc jkbchjdvcsdhcvsdghcvsdcbgsdgchsdv nnsdhjcvsdchg",
     id: "About-us",
     before: "one",
     shadowColor: "blue",
@@ -11,10 +13,11 @@ var arr = [
     brdrRd: "1rem",
   },
   {
-    heading: "new",
+    heading: "palcement",
     headingText: "new",
     content: "wwp",
-    id: "dsnk",
+
+    id: "table",
   },
 ];
 
@@ -39,7 +42,7 @@ const faculty = [
 ];
 
 console.log("hello content");
-happen(0);
+happen("no");
 
 profileCards("tec", faculty); //faculty profile card
 
