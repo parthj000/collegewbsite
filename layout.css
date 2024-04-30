@@ -145,12 +145,13 @@ main container to hold the content
     
     margin-bottom:2.5rem;
     transition:all 0.15s ease-in-out;
+    
     cursor: pointer;
     /* border-style: dashed; */
     border-width: 1px;
     border-radius:var(--brdr-rd);
     position: relative;
-    padding:1rem;
+    padding:1rem 1rem 1rem 1.5rem;
     background-color: #ffffff;
     transition:all 0.3s ;
     
