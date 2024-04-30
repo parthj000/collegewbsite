@@ -6,7 +6,7 @@ var arr = [
     content:
       "<p>The department of Electronics & Communication Engineering was established in the year 2003. Department offers four year degree course in B. Tech (Electronics & Communication Engineering). The department is also engaged in providing in- house training to students.<br><br>Department has qualified faculty. Department has arranged various extramural and extension lectures of experts from institutions of national repute like NIT and IIT in preceding academic sessions.</p>",
     id: "About-us",
-    before: "one",
+
     shadowColor: "blue",
 
     brdrRd: "1rem",

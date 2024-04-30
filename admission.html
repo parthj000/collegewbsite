@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang=
+>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>animation_correction</title>
+<link rel='stylesheet' href='./admission.css'>
+<link rel='stylesheet' href='./layout.css'>
+<link rel='stylesheet' href='./responsive.css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+        
+        <div class="main-container">
+        <div id="nested">
+        <div class="side-bar">
+            <div class="head-department">
+                Contents
+            </div>
+            <ul>
+                
+                <li onclick="scrollToSection('one')" id="one-li" class="btn-slide">Teaching Methodology</li>
+                <li onclick="scrollToSection('teacher-card')" id="two-li" class="btn-slide">Faculty</li>
+                
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="head-department">
+                Department of CS
+            </div>
+
+            <section id="one" class="bx">
+                <div class="heading">
+                    Teaching <span style="color:red;">Methodology
+                </div>
+
+            <div class="content">
+                <p>We follow semester scheme for all the 4 years of UG courses and 2 years of PG courses. Teaching Methodology involves Three Tier learning process. Theoretical knowledge is provided through classroom teaching using chalk-duster to modern teaching aids. Online lectures are also explored through NPTEL, QEEE under Technical Education Quality Improvement Program. Students are facilitated for problem solving and doubt clearing in the subjects specified in the schemes of syllabi. Practical sessions are the part of curriculum prescribed by Rajasthan Technical University (RTU), Kota  exploring the theoretical knowledge over practice. Industrial visits are also arranged for better exposure to latest technological advancements.</p>
+            </div>
+          
+        </section>
+
+           
+
+         <section id="teacher-card" class="bx pr" >
+            <div class="profile-container">
+              <div><img src="https://mlvti.ac.in/admin/uploads/41781bbb.jpg" alt=""></img></div>
+                
+                <div class="pr-mega">
+                <h1 class="pr-heading">Dr. Ritesh Saraswat</h1>
+                <div class="pr-about">Head of Department</div>
+                <p class="pr-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima illo molestiae fugiat tenetur incidunt nihil dolorum vitae qui, deleniti eum facilis laudantium ipsum ad nesciunt et. Quidem reiciendis aliquam earum?</p>
+                </div>
+            </div>
+
+            
+
+            
+          
+        </section>
+        
+       
+
+        
+        
+        
+
+
+
+
+
+
+       
+      
+
+
+        
+
+
+        
+
+        
+          
+
+           
+            
+            
+           
+
+        </div>
+
+    </div>
+
+
+    <script src="./scr.js" type="module"></script>
+    <script src="./admission.content.js" type="module"></script>
+    <script  >
+      
+    function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+    </script>
+
+
+    
+    
+</body>
+</html>
