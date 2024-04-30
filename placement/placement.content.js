@@ -67,8 +67,48 @@ var content2 = [
   ["Total", 235, 140, 106, 75.71],
 ];
 
+var OurPrideContent =[
+    [
+      "Name",
+      "Designation",
+      "Organization",
+    ],
+
+
+
+  
+    ["Mr. Rakesh Srivastava (1992)", "Sales Head", "Tech Mahindra, USA"],
+    ["Mr. Sandeep Dangi (1992)", "Managing Director", "Adhunik Polytex P. Ltd., Surat"],
+    ["Mr. Madhusudan Nuwal (1992)", "Managing Director", "Swagat Synthetics P. Ltd., Bhilwara"],
+    ["Mr. Hemant Kedia (1992)", "Head of Procurement", "Reliance Ind. Ltd. (Recron-Malaysia)"],
+    ["Mr. Rahul Srivastava (1992)", "General Manager (Mktg.)", "Reliance Ind. Ltd., Bangalore"],
+    ["Mr. S K Jhuriya (1992)", "Vice President", "Vardhman Textiles, Bhopal"],
+    ["Mr. Sanjay Soni (1993)", "General Manager", "Cantabil Retail Ind. Ltd., New Delhi"],
+    ["Mr. Vivek Sahal (1993)", "General Manager", "RSWM Ltd., New Delhi"],
+    ["Mr. Piyush Baheti (1994)", "General Manager", "Reliance Ind. Ltd., Surat"],
+    ["Mr. Jagmohan Sharma (1994)", "Sourcing Head", "Clan International Ltd., Canada"],
+    ["Mr. Kamlesh Baheti (1994)", "General Manager (Mktg.)", "Reliance Ind. Ltd., Mumbai"],
+    ["Mr. Rakesh Kumar Gagrani (1994)", "General Manager", "RSWM Ltd., Banswara"],
+    ["Mr. Dheeraj Talreja (1998)", "Director (North East & South East Asia)", "Hunts Man International P. Ltd., Singapore"],
+    ["Mr. Shailendra Sharma (1998)", "Joint Commissioner (IRS)", "Income Tax Dept., Jaipur"],
+    ["Mr. Amit Pandey (1995)", "General Manager", "Vinayak Textile Ltd., Ludhiana"],
+    ["Mr. Manish Sharma (1994)", "General Manager", "JBF Ltd., Silvassa"],
+    ["Ms. Prashasti Pareek (2008)", "IAS", "Gujrat Cadre"],
+    ["Mr. Shyam Sunder Verma (2005)", "CEO", "Ready Bytes, Bhilwara"],
+    ["Mr. Pankaj Dadhich (2006)", "Project Manager", "Robert Bosch (India Division)"],
+    ["Mr. Sandeep Kothari (2006)", "Project Manager", "LNT InfoTech (India Division)"],
+    ["Mr. Puneet Pareek (2008)", "Sr. Software Engineer", "Wipro, Pune"],
+    ["Mr. Gautam Mehta (2007)", "Managing Director", "IMAD, Bhilwara"],
+    ["Mr. Abhishek Maloo (2006)", "Sr. Software Engineer", "Facebook, USA"]
+]
+
+
+
 // Create the table
 var table = createTable(7, 5, content);
 var table2 = createTable(7, 5, content2);
+var OurPridetable = createTable(23,3, OurPrideContent);
+
 document.getElementById("table-container").appendChild(table);
 document.getElementById("table-container2").appendChild(table2);
+document.getElementById("Our-Pride-table").appendChild(OurPridetable);
