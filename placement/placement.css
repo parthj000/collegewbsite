@@ -5,7 +5,10 @@ body{
 }
 
 *{
-font-family: sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 0;
+margin: 0;
+
 }
 /* table styling starts here */
 
