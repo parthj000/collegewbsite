@@ -2,8 +2,9 @@
 *{
     padding:0;
     margin:0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 :root{
     --p-font-color:rgb(101, 101, 101);
     --heading-color:black;
@@ -12,6 +13,7 @@
     --h-font-size:2.5rem;
     --brdr-rd:1rem;
 }
+
 body{
     overflow-y: hidden;
     background:#F3F3F3;
@@ -26,13 +28,6 @@ body{
     opacity: 0.3;
     filter: blur(2px);
 }
-
-
-
-
-
-
-
 
 .main-container{
     display: grid;
@@ -95,7 +90,7 @@ button animation and stuff
     transition: all 0.15s ease;
     
     
-    
+     
 }
 .btn-slide::before{
     content: "";
@@ -117,9 +112,6 @@ button animation and stuff
 .btn-slide:hover::before,.btn-slide:focus::before{
     
     transform: scaleX(1);
-    
-    
-
 
 }
 .btn-slide:hover,.btn-slide:focus{
@@ -412,7 +404,4 @@ Responsiveness
 
 .pic-card div:hover::after,.pic-card div:focus::after{
     transform: scaleY(1) ;
-     
-    
-
 }
