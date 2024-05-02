@@ -147,5 +147,29 @@ function profileCards(profileId, faculty) {
   }
 }
 
+function scrollBarMobile() {
+  let elem = document.querySelector(".div-1");
+  let elem2 = document.querySelector(".div-2");
+
+  elem.addEventListener("click", () => {
+    console.log("button is click", elem2, elem);
+
+    if (!elem2 || elem2.style.display === "none") {
+      elem2.style.display = "block";
+      console.log(elem2.style.display);
+      // elem2.style.animation = "side-mob 0.15s";
+
+      return;
+    }
+
+    return (elem2.style.display = "none");
+  });
+}
+try {
+  scrollBarMobile();
+} catch (er) {
+  console.log(er);
+}
+
 export default makeSections;
 export { happen, createImage, profileCards };
