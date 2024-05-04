@@ -1,0 +1,58 @@
+body{
+    overflow: scroll;
+    background-color: #f2f2f2 !important;
+    
+}
+
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 0;
+margin: 0;
+
+}
+/* table styling starts here */
+
+  table {
+    padding:0 !important;
+    margin:0;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+  
+
+  tr:first-child{
+    background: red;
+    color:white;
+    border-top-left-radius: 50%;
+    
+  }
+  td:nth-child(n){
+    
+    text-align: center;
+    border: 1px solid black;
+  }
+  tr:nth-child(n){
+    
+    
+    border: 1px solid rgb(92, 90, 90);
+
+    /* padding:0.3em; */
+  }
+
+
+  @media (max-width:800px) {
+    table{
+      font-size: 0.6em;
+      
+    }
+    
+  }
+
+  /* tables styling end here */
