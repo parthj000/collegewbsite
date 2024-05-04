@@ -40,6 +40,6 @@ const faculty = [
   },
 ];
 console.log("hello content");
-happen(5000);
+happen(2000);
 makeSections(arr);
 profileCards("tec", faculty);
