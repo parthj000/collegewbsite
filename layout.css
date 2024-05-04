@@ -501,12 +501,7 @@ Responsiveness
     
     
 }
-.side-bar-mob ul li {
-    
-    margin-top:5px;
-    margin-bottom:5px;
-    
-}
+
 
 @keyframes side-mob {
     from{

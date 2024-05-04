@@ -15,7 +15,6 @@
     padding:2rem;
     
     animation:zero-ani calc(var(--i) + 2.5s) ,show-text 1s calc(var(--i) + 2.5s)  linear;
-    text-transform: uppercase;
     
     
     font-weight: lighter;

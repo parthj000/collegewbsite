@@ -21,9 +21,18 @@ var arr = [
     before: "one",
   },
   {
-    heading: "Annual-Report",
-    headingText: "Annual Report",
-    content: "Read <a class='b' href='./TC23.pdf'>Annual Report</a>",
+    heading: "PSO",
+    headingText: "Program Specific Outcomes",
+    content:
+      "<span class='clr'>PSO1:</span> Provide students with core competence in mathematics, scientific and basic engineering fundamentals to develop mechanical engineering applications.<br><br><span class='clr'>PSO3:</span> To empower the students to apply practical skills, knowledge in major streams such as thermal, design, manufacturing and industrial engineering.<br><br><span class='clr'>PSO3:</span> To enable the student to take-up career in industries or to pursue higher studies in mechanical and interdisciplinary programs with high regard for ethical values, environmental and social issues.",
+    id: "Annual-report",
+    shadowColor: "yellow",
+  },
+  {
+    heading: "Resources",
+    headingText: "Resources",
+    content:
+      "<a class='clr' href='./TC23.pdf'>Annual Report</a><br><br><a class='clr' href='./TC23.pdf'>Outcome based Education 2024</a><br><br><a class='clr' href='./TC23.pdf'>TIME TABLE 2024</a><br><br><a class='clr' href='./TC23.pdf'>Previous Year Question Papers</a><br><br>",
     id: "Annual-report",
     shadowColor: "yellow",
   },
