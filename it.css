@@ -65,7 +65,7 @@
 
 svg{
     
-    animation:svg-translate  3s backwards linear var(--i);
+    animation:svg-translate  2s backwards linear var(--i);
 }
 
 
