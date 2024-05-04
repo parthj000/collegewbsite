@@ -128,6 +128,7 @@ var bogContainer = document.getElementById("bog-minutes-container");
 // Loop through the data and create cards
 bogMinutesData.forEach(function (item) {
   var card = createBogMinuteCard(item.title, item.date);
+  bogContainer.appendChild(card);
 });
 
 happen("no");
